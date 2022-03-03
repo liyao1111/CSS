@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 , .box2{
+            width: 200px;
+            height: 200px;
+        }
+        .box1{
+            background-color: springgreen;
+            font-size: 100px;
+            /* 设置一个下边距 */
+            margin-bottom: 100px;
+        }
+        /*  */
+        .box2{
+            background-color: tomato;
+            margin-top: 100px;
+        }
+        /* 垂直外边距的折叠
+            相邻的垂直方向外边距会发生重叠现象
+            兄弟元素
+                兄弟元素相邻的垂直外边距会取两者间较大值（两者都是正值）
+                特殊情况
+                    相邻外边距一正一负 取两者和
+                    两者都是负  两者值取绝对值较大的
+            父子元素
+                父子元素间的相邻上外边距 子元素的外边距会传给父元素
+                父子外边距的折叠会影响到页面的布局，也必须处理
+
+
+         */
+         .box3{
+             width: 200px;
+             height: 200px;
+             background-color: violet;
+             
+         }
+         .box4{
+             width: 100px;
+             height: 100px;
+             background-color: black;
+             margin-top: 100px;
+            
+         }
+
+         /* 让子元素在父元素中下移的一种方法
+            父元素设置padding 再修改height
+         */
+    
+
+         .box5{
+            width: 200px;
+             height: 100px;
+             background-color: blue;
+             padding-top: 100px;
+
+         }
+         .box6{
+             width: 100px;
+             height: 100px;
+             background-color: red;
+         }
+         /* 给父元素加一border 使父子元素的margin不相连
+         */
+         .box7{
+            width: 200px;
+            height: 199px;
+            background-color: black;
+            border-top: 1px red solid;
+         }
+         .box8{
+             width: 100px;
+             height: 100px;
+             background-color: yellow;
+             margin-top: 99px;
+         }
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3">
+        <div class="box4"></div>
+    </div>
+    <br>
+
+    <div class="box5">
+        <div class="box6"></div>
+    </div>
+    <br>
+    <div class="box7">
+        <div class="box8"></div>
+    </div>
+    
+</body>
+</html>

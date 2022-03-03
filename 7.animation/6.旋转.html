@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            perspective: 800px;
+        }
+        body{
+            border: 1px red solid;
+        }
+        body div{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            margin-left: 300px;
+            background-color: #bfa;
+            transition: 2s;
+        }
+   
+        .box1:hover{
+            /* 通过旋转可以使元素沿着x y 或z旋转一个角度 */
+            transform: rotatex(90deg);
+        }
+        .box2:hover{
+            transform: rotateY(180deg)  translateZ(50px);
+        }
+        .box3:hover{
+            transform: rotateZ(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>

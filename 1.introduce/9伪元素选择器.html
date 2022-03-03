@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 30px;
+        }
+        /* 伪元素表示一些并不存在的元素（表示特殊的位置） */
+        /* 例子：将一段话第一个开头字母大写 */
+        /* 
+            伪元素使用 ：：表示
+            ::first-letter 表示第一个字母
+         */
+         p::first-letter{
+             font-size: 50px;
+         }
+         /* 
+         ::first-line 表示第一行 
+         */
+         p::first-line{
+             background-color: yellow;
+             /* 把第一行当成一个元素并给这个元素赋属性，这就是伪元素选择器的作用 */
+         }
+         /* ::selection 表示选中的元素 */
+         p::selection{
+             color: red;
+             background-color: blue;
+         }
+         /* ::before 元素的起始位置
+            ::after 元素的结束位置
+                before和after必须结合content使用
+                content是用css在选中标签的前或者后添加东西
+         */
+         div::before{
+             content: 'abc';
+             color: red;
+             /* content添加的在网页中无法选中 */
+         }
+         div::after{
+             content: 'haha';
+             color: blueviolet;
+         }
+
+    </style>
+</head>
+<body>
+    <div>
+        你好，今天天气真不错！
+    </div>
+    
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perferendis sint repellendus animi molestiae dolorum ut vero natus voluptas iste expedita ratione, dolores sit molestias adipisci quibusdam quis delectus facilis?</p>
+    
+</body>
+</html>

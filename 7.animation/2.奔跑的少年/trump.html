@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 100px;
+            margin: 0 auto;
+        }
+        .box1{
+            float: left;
+            height:100px;
+            width:100px;
+            background-image: url(./img/trump_run.png);
+            margin: 0 auto;
+           animation-name: run1;
+           animation-duration: 2s;
+           animation-iteration-count: infinite;
+           animation-timing-function: steps(6);
+        }
+        @keyframes run1{
+            from{
+                background-position: 0 0 ;
+            }
+            to{
+                background-position: -600px 0;
+            }
+        }
+        .box2{
+            float: left;
+            height:100px;
+            width:100px;
+            background-image: url(./img/trump_run.png);
+            margin: 0 auto;
+           animation-name: run2;
+           animation-duration: 2s;
+           animation-iteration-count: infinite;
+           animation-timing-function: steps(6);
+
+        }
+        @keyframes run2 {
+            from{
+                background-position: 0 100px;
+            }
+            to{
+                background-position: -600px 100px;
+            }
+            
+        }
+        .box3{
+            float: left;
+            height:100px;
+            width:100px;
+            background-image: url(./img/trump_run.png);
+            margin: 0 auto;
+           animation-name: run3;
+           animation-duration: 2s;
+           animation-iteration-count: infinite;
+           animation-timing-function: steps(6);
+
+        }
+        @keyframes run3 {
+            from{
+                background-position: 0 200px;
+            }
+            to{
+                background-position: -600px 200px;
+            }
+            
+        }
+        .box4{
+            float: left;
+            height:100px;
+            width:100px;
+            background-image: url(./img/trump_run.png);
+            margin: 0 auto;
+           animation-name: run4;
+           animation-duration: 2s;
+           animation-iteration-count: infinite;
+           animation-timing-function: steps(6);
+
+        }
+        @keyframes run4 {
+            from{
+                background-position: 0 300px;
+            }
+            to{
+                background-position: -600px 300px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        
+    </div>
+  
+</body>
+</html>

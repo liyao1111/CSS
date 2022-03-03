@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            perspective: 800px;
+        }
+        .clock-wrapper{
+            width: 1024px;
+            height: 1024px;
+            background-image: url(./img/1024px-Analogue_clock_face.svg.png);
+            background-color: #bfa;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .clock-wrapper div{
+            width: 10px;
+            height: 500px;
+            position: absolute;
+            left: 512px;
+            transform-origin: 0 500px;
+        }
+        .hour-line{
+            background-color: red;
+            animation-name: run;
+            animation-duration: 100s;
+            animation-iteration-count: infinite;
+
+        }
+        .min-line{
+            background-color: blue;
+            animation-name: run;
+            animation-duration: 60s;
+            animation-iteration-count: infinite;
+        }
+        .sec-line{
+            background-color: black;
+            animation-name: run;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes run {
+            from{
+                transform: rotateZ(0);
+            }
+            to{
+                transform: rotateZ(360deg);
+            }
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="clock-wrapper">
+        <div class="hour-line"></div>
+        <div class="min-line"></div>
+        <div class="sec-line"></div>
+
+    </div>
+    
+</body>
+</html>

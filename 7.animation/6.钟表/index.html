@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clock-img{
+            width: 1024px;
+            height: 1024px;
+            background-image:url(./img/1024px-Analogue_clock_face.svg.png);
+          /* overflow: hidden; */
+        }
+        .sec-clock{
+           
+            width: 1024px;
+            height: 1024px;
+            position: absolute;
+            overflow: hidden;
+            animation-name:run;
+            animation-duration: 60s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite
+        }
+        .min-clock{
+          
+            width: 1024px;
+            height: 1024px;
+            position: absolute;
+            overflow: hidden;
+            animation-name:run;
+            animation-duration: 3600s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite
+        }
+        .hour-clock{
+         
+            width: 1024px;
+            height: 1024px;
+            position: absolute;
+            overflow: hidden;
+            animation-name:run;
+            animation-duration: 36720s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite
+        }
+        
+        .sec-line{
+            width: 500px;
+            height: 10px;
+            background-color: red;
+            margin-left: 512px;
+            margin-top: 512px;
+        }
+        .min-line{
+            width: 500px;
+            height: 10px;
+            background-color:palevioletred;
+            margin-left: 512px;
+            margin-top: 512px;
+        }
+        .hour-line{
+            width: 500px;
+            height: 10px;
+            background-color: black;
+            margin-left: 512px;
+            margin-top: 512px;
+        }
+        @keyframes run {
+            from{
+                transform: rotateZ(0);
+            }
+            to{
+                transform: rotateZ(360deg);
+            }
+            
+        }  
+    </style>
+</head>
+<body>
+    <div class="clock-img">
+        <div class="sec-clock">
+            <div class="sec-line"></div>
+
+        </div>
+        <div class="min-clock">
+            <div class="min-line"></div>
+        </div>
+        <div class="hour-clock">
+            <div class="hour-line"></div>
+        </div>
+    </div>
+  
+</body>
+</html>

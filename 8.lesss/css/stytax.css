@@ -1,0 +1,24 @@
+/* 多行注释 会解析到css文件*/
+body {
+  background-color: #bfa;
+}
+body .box1 {
+  background-color: orange;
+}
+body .box1 .box2 {
+  background-color: black;
+}
+body .box1 .box3 {
+  background-color: red;
+}
+.box5 {
+  width: 100px;
+  background-color: red;
+}
+.box6 {
+  width: 100px;
+  background-image: url("box6/1.png");
+}
+.box7 {
+  color: red;
+}

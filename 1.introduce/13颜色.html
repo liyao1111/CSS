@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+          
+            background-color: red;
+        }
+          /* 
+                颜色单位：
+                    css中可直接使用颜色名来设置颜色
+                        red blue green black
+                        css中直接使用颜色名不方便
+                    
+                    RGB值
+                        rgb通过三种颜色不同浓度来调配不同颜色
+                        red green blue
+                        0~255之间（0%~100%）
+                        语法 RGB(红色，绿色，蓝色)
+                        自然光三原色 255 255 255  白色
+                                    0   0   0    黑色
+                     */
+                    .box2{
+                        width: 100px;
+                        height: 100px;
+                        background-color: rgb(255, 255, 255);
+                    }
+                    .box3{
+                        width: 100px;
+                        height: 100px;
+                        background-color: rgb(0,0,0);
+                    }
+                    .box4{
+                        width: 100px;
+                        height: 100px;
+                        background-color: rgb(149,120,211);
+                    }
+                    /* 
+                    rgba
+                        -在rgb基础上增加一个a表示不透明度
+                        语法 rgba（ ， ， ，）
+                    
+                    */
+                    /* 
+                    16进制rgb值
+                        -语法 #红色绿色蓝色
+                        颜色浓度 00~ff
+                        如果颜色两位重复可以简写
+                            #aabbcc -> #abc
+                     */
+                     /* hsl值 hsla值
+                            -h 色相 0～360
+                            -s 饱和度 0%~~100%
+                            -l 亮度 0%~100%  0关灯
+                      */
+                    .box5{
+                        width: 100px;
+                        height: 100px;
+                        background-color: rgba(149, 120, 211, 0.5);
+                    }
+                    .box6{
+                        width: 100px;
+                        height: 100px;
+                        background-color:#96daea;
+                    }
+                    .box7{
+                        width: 100px;
+                        height: 100px;
+                        background-color: hsl(98, 48%, 30%);
+
+                    }
+                    .box8{
+                        width: 50px;
+                        height: 50px;
+                        background-color: hsla(10, 48%, 30%, 0.5);
+                    }
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7">
+        <div class="box8"></div>
+    </div>
+
+    
+</body>
+</html>

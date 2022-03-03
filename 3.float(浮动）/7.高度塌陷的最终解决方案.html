@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            border:10px red solid;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+            float: left;
+        }
+        .box3{
+            clear: both;
+        }
+        /* box3把box1撑起来了
+            这样box1就可以跟着box2的高度变化而变化
+            这是在html中增加一个div
+         */
+
+         /* 也可以在css中利用after选择器来设置
+         */
+         .box4{
+             border:10px orange solid;
+         }
+         .box5{
+             width: 100px;
+             height: 100px;
+             background-color: #bfa;
+             float: left;
+         }
+         /* 原理和添加box3一模一样，只是用伪元素来添加一个行内元素
+            再用display转化为块元素
+         */
+        .box4::after{
+            content: ' ';
+            display: block; /* 以块元素显示*/
+            clear: both;    
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <div class="box3">a</div>
+    </div>
+    <br>
+    <div class="box4">
+        <div class="box5"></div>
+    </div>
+
+    
+</body>
+</html>

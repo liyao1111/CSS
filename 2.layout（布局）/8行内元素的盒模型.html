@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        .s1{
+            background-color: chartreuse;
+            width: 100px;
+            height: 100px;
+            padding: 100px;
+            border: violet 100px solid;
+            border-top:white 0px solid;
+            margin: 100px;
+            
+            /* 行内元素的盒模型
+                行内元素不支持设置宽度和高度
+                支持padding 但垂直方向上的padding不影响页面布局
+                支持border 垂直方向的border 不会影响页面布局
+                可设置margin，垂直方向不影响布局
+
+                 */
+        }
+        .box1{
+            width: 100px;
+            height: 300px;
+            background-color: darkblue;
+            margin-top: 100px;
+           
+        }
+        /* display
+            可选属性：
+                inline 显示为行内元素
+                block 显示为块元素
+                inline-block 行内块元素
+                    既可设置宽度高度又不会独占一行 
+                table 将元素设置为一个表格
+                none 元素不在页面中显示 不占据位置
+
+            visibility 用来设置元素的显示状态
+            可选值
+                visible 默认值，元素在页面中正常显示
+                hidden 元素在页面中隐藏不显示 隐藏了，但还占着位置
+         */
+         a{
+             display: block;
+             width: 100px;
+             height: 100px;
+             background-color: wheat;
+         }
+    
+        
+
+    </style>
+</head>
+<body>
+   <a href="https://www.w3school.com.cn/" target="_blank">w3school</a>
+    <span class="s1">我是span</span>
+    <div class="box1"></div>
+   
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* [属性名]选择含有指定属性的标签 */
+        /* [title]{
+            color: orange;
+        } */
+        /* [属性名=属性值]选择含有指定属性名和属性值的元素 */
+        [class=qa]{
+            font-size: 50px;
+        }
+        /* [属性名^=属性值]选择属性值以指定开头的元素*/
+         [class^=abc]{
+             color:red;
+         }
+         /* [属性名$=属性值]选择以指定属性值结尾的元素*/
+         [title $=123]{
+             color: tomato;
+         }
+         /* [属性名*=属性值] 选择属性值中有指定内容的元素标签 */
+         [class*=abc]{
+             font-size: 60px;
+         }
+
+
+    </style>
+</head>
+<body>
+    <!-- 1 -->
+    <h1 title="12121">hello</h1>
+    <p title="123">123</p>
+    <p title="123456">456</p>
+    <p title="hello123">789</p>
+
+    <!-- 2 -->
+    <p class="qa">000</p>
+    <p class="ws">999</p>
+
+    <!-- 3 -->
+    <p class="abc">段1</p>
+    <p class="abcde">段2</p>
+    <p>段3</p>
+
+    <!-- 4 -->
+   
+    
+</body>
+</html>

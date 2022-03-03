@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            background-color: #bfa;
+            height: 300px;
+            /* 默认情况下父元素高度被内容撑开 */
+        }
+        .inner1{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            margin-bottom: 50px;
+        }
+        .box2{
+            width: 500px;
+            height: 300px;
+            background-color: brown;
+        }
+        .inner2{
+            width: 250px;
+            height: 300px;
+            background-color: darkblue;
+        }
+        .box3{
+            width: 500px;
+            height: 300px;
+            background-color: darkgreen;
+        }
+        .inner3{
+            width:250px;
+            height: 400px;
+            /* 子元素高度超过父元素，子元素会从父元素中溢出
+                使用overflow属性来设置父元素如何处理溢出的子元素
+                
+                    可选值：
+                        visible 默认值 子元素会从父元素中溢出，在父元素外部的位置显示
+                        hidden  溢出内容将被裁剪
+                        scroll 生成两个滚动条，通过滚动条来查看完整的内容
+                        auto 根据需要生成滚动条
+                        */
+            background-color: red;
+        }
+        .box4{
+            width: 600px;
+            height: 400px;
+            background-color: silver;
+            overflow: scroll;
+        }
+        inner4{
+            height: 500px;
+            width: 600px;
+            background-color: slateblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="inner1"></div>
+        <div class="inner1"></div>
+    </div>
+    <div class="box2">
+        <div class="inner2"></div>
+    </div>
+    <div class="box3">
+        <div class="inner3"></div>
+    </div>
+    <div class="box4">
+        <div class="inner4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi laudantium a laboriosam quibusdam minima, facilis nisi eum suscipit amet eligendi deleniti mollitia ut dignissimos alias quisquam saepe eaque labore impedit.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, pariatur doloremque! Iste perferendis alias quae, obcaecati molestias voluptates deserunt, illum, fugiat nam saepe voluptas inventore error amet atque. Debitis, libero?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur iste voluptatem porro enim at ab earum maiores, magnam repellat nam possimus sapiente quisquam officia veritatis velit, reiciendis minima vel 
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio nostrum corrupti, minima ut eligendi alias dolorum quod sequi consequuntur impedit. Temporibus veniam et earum! Tenetur, illum. Dolorum rem veritatis repellat.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod amet exercitationem maiores eum ad, quo ex. Praesentium nemo deserunt vero non, illum error corporis, porro ea, quam magnam blanditiis laudantium.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor nihil pariatur error vel nesciunt qui dolorem ratione explicabo, earum est autem iusto minima voluptas debitis, distinctio voluptate id assumenda itaque?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis veritatis quaerat tempore et eum incidunt repudiandae necessitatibus saepe, delectus autem consequuntur est, rerum quis commodi quas nihil! Doloremque, quod at?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro illo maxime reiciendis eos laudantium ipsam fugit deleniti, ipsum iste facilis id adipisci voluptatum placeat esse totam enim deserunt, in animi.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eos ratione error facere ipsa consequuntur, in, incidunt cupiditate asperiores mollitia nostrum nemo, dolore eligendi beatae perspiciatis molestias fugit ad recusandae?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit, itaque quae nesciunt quisquam suscipit excepturi quibusdam magni natus maiores illo ea, ratione eos repellendus eveniet sunt eaque enim tenetur.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ullam id magni iure natus quis voluptas, minima expedita accusamus nihil. Ex at accusantium eveniet? Vero, ipsam dolor! Ab, ipsa cum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos error maiores consectetur, et, ratione natus provident, impedit recusandae velit facere commodi! Sunt, corporis placeat eligendi aliquid vero deserunt. Ex, laudantium!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, fugit consequuntur quo dicta esse incidunt neque eligendi debitis, voluptate earum exercitationem cum dolorum quidem veniam nemo perspiciatis omnis consequatur officia?
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            border: 5px red solid;
+            width: 1000px;
+            height: 500px;
+            list-style: none;
+            /* 弹性容器 */
+            display: flex;
+            /* flex-wrap设置弹性元素是否自动换行
+                可选值:nowarp 默认值 不换行
+                        warp 沿着辅轴方向换行
+                        warp-reverse 沿着辅轴反方向换行   
+                flex-wrap: wrap;      
+            */
+            /* flex-flow 简写形式 warp和direction结合形式 */
+            flex-flow: row-reverse wrap-reverse;
+            justify-content:space-between ;
+            /* 如何分配主轴上的空白空间（主轴上的元素如何排列）
+                可选值：
+                    flex-start 元素沿着主轴起边排列
+                    flex-end 元素沿着主轴终边排列
+                    center 居中排列
+                    space-around 空白分布到元素两侧
+                    space-between 空白均匀分布到元素间 
+                    space-evenly  空白分布到元素单侧
+             */
+            align-items:center ;
+            /* 元素在辅轴上如何对齐
+                可选值：
+                    stretch 默认值 将元素设定为相同的值
+                    flex-start 元素不会拉伸，沿着辅轴起边对齐
+                    flex-end 辅轴终边对齐
+                    center 居中对齐
+                    base-line 基线对齐
+
+                 */
+            align-content: center;
+                 /* 辅轴空白空间的分布*/
+            
+        }
+        li{
+            width: 200px;
+            height: 200px;
+            font-size: 50px;
+            line-height: 200px;
+            text-align: center;
+            background-color: #bfa;
+            flex-shrink: 0;
+        }
+        li:nth-child(2){
+            align-self: flex-start;
+            /* 覆盖当前弹性元素上的align-items */
+            background-color: gray;
+        }
+        li:nth-child(3){
+            background-color: rgb(91, 91, 153);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    
+</body>
+</html>

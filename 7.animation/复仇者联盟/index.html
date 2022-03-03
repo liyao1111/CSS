@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            perspective: 800px;
+        }
+        .wrapper{
+            width: 200px;
+            height: 200px;
+            
+            margin: 200px auto;
+            /* 设置3d变形效果 */
+            transform-style: preserve-3d; 
+            animation-name: rotate;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+    
+        }
+        @keyframes rotate {
+            from{
+                transform: rotateX(0) rotateY(0) rotateY(0)
+            }
+            to{
+                transform: rotateX(180deg)  rotateY(180deg) rotateZ(180deg) ;
+            }
+            
+        }
+        .wrapper div{
+            
+            width: 200px;
+            height: 200px;
+            position:absolute;
+            opacity:.8;
+        }
+        .box1{
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .box2{
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+        .box3{
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .box4{
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+        .box5{
+            transform: translateZ(100px)
+        }
+        .box6{
+            transform: rotateY(180deg) translateZ(100px)
+        } 
+    </style>
+</head>
+<body>
+    <!-- 立方体 -->
+    <!-- 外部容器 -->
+    <div class="wrapper">
+        <div class="box1">
+            <img src="./img/1.jpg" alt="">
+        </div>
+        <div class="box2">
+            <img src="./img/2.jpg" alt="">
+        </div>
+        <div class="box3">
+            <img src="./img/3.jpg" alt="">
+        </div>
+        <div class="box4">
+            <img src="./img/4.jpg" alt="">
+        </div>
+        <div class="box5">
+            <img src="./img/5.jpg" alt="">
+        </div>
+        <div class="box6">
+            <img src="./img/6.jpg" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>

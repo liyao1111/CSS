@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            width: 800px;
+            height: 200px;
+            border: 10px red solid;
+        }
+        .inner{
+            width: 300px;
+            height: 200px;
+            background-color: blue;
+            /* 
+            元素的水平方向的布局：
+                元素在其父元素中水平方向的位置由以下几个属性共同决定：
+                    margin-left
+                    border-left
+                    padding-left
+                    width
+                    padding-right
+                    border-right
+                    margin-right
+            一个元素在其父元素中，水平布局必须要满足以下等式
+            margin-left + border-laft + padding-left + width + padding-right + border-right + margin-right = 父元素内容区宽度（必须满足）
+
+            0+0+0+300+0+0+0 = 800 ？
+            以上等式必须成立，若相加结果不成立，则称为过渡约束，等式会自动调整
+            -调整的情况：
+                -如果这七个值中没有为auto的情况，则浏览器会自动调整marigin-right的值以使等式满足
+                -七个值中有三个可设置为auto
+                    margin-left 
+                    marigin-right
+                    width
+                        如果这三个有设为auto的，则自动调整auto的值以使等式成立
+            如果将一个外边距和宽度同时设auto，则宽度会调整到最大
+            如果将三个值都设置为auto，则外边距都为0，宽度最大
+            如果将两个外边距都设置为auto，width固定值，则会将外边距设置为相相同的值，经常利用此特性来使子元素居中
+
+             */
+          
+        }
+        .box1{
+            width: 800px;
+            height: 200px;
+            border: 10px blue solid;
+            }
+        .inner1{
+            height: 200px;
+            width: auto;
+            background-color: pink;
+        }
+        .box2{
+            width: 800px;
+            height: 200px;
+            border:10px black solid;
+        }
+        .inner2{
+            width:300px;
+            height: 200px;
+            margin-left: auto;
+            background-color: chartreuse;
+        }
+        .box3{
+            width: 800px;
+            height: 200px;
+            border: 10px skyblue solid;
+        }
+        .inner3{
+            height: 200px;
+            margin-left:300px;
+            width: auto;
+            background-color: yellow;
+        }
+        .box4{
+            height: 200px;
+            width: 800px;
+            border: 10px springgreen solid;
+        }
+        .inner4{
+            height: 200px;
+            width:300px;
+            margin-right: auto;
+            margin-left:auto;
+            background-color: violet;
+
+        }
+        /* 
+             */
+      
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+        
+    </div>
+    <div class="box1">
+        <div class="inner1"></div>
+    </div>
+    <div class="box2">
+        <div class="inner2"></div>
+    </div>
+    <div class="box3">
+        <div class="inner3"></div>
+    </div>
+    <div class="box4">
+        <div class="inner4"></div>
+    </div>
+    
+</body>
+</html>

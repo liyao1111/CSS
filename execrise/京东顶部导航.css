@@ -1,0 +1,61 @@
+/* 外部容器 */
+.top-nav{
+    height: 30px;
+    background-color:#e3e4e5 ;
+    border-bottom: 1px #999 solid;
+    line-height: 30px;
+}
+/* 内侧容器大小 */
+.top-bar{
+    width: 1500px;
+    background-color: #e3e4e5;
+    margin: 0 auto;
+    height: 30px;
+}
+/* 左侧地址 */
+.location{
+    float: left;
+}
+/* 右侧导航栏 */
+.shortcut{
+    float: right;
+}
+/* 右侧导航栏中的ul */
+.shortcut li{
+    float: left;
+}
+/* 设置字体 */
+.location{
+    font-size: 12px;
+}
+.shortcut{
+    font-size: 12px;
+}
+.shortcut li{
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+/* 下拉框 */
+.current-city .city-list{
+    width: 320px;
+    height: 436px;
+    border: 1px #999 solid;
+    background-color: #e3e4e5;
+    display: none;
+    box-shadow: 0 5px 10px #e3e4e5;
+}
+/* 鼠标移到location出现下拉框 */
+.location:hover .city-list{
+    display: block;
+}
+/* 图标颜色 */
+.fas{
+    color:red
+}
+
+

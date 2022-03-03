@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            margin: 100px auto;
+            transition: 2s;
+        }
+        .box1:hover{
+            transform: scaleX(.5) scaleY(2);
+        }
+        /* 缩放
+            transform:scaleX()
+         */
+         /* transform-origin 变形原点 */
+         .img-wrapper{
+             width: 200px;
+             height: 200px;
+             border: 1px red solid;
+             margin: 0 auto;
+             transition: 2s;
+             transform-origin: 0 0 ;
+         }
+         .img-wrapper:hover {
+             transform: scale(1.5);
+         }
+         
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="img-wrapper">
+        <img src="./复仇者联盟/img/3.jpg" width="100%">
+    </div>
+</body>
+</html>

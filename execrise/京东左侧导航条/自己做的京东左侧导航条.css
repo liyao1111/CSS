@@ -1,0 +1,31 @@
+body{
+    background-color: #bfa;
+}
+.nav{
+    width: 190px;
+    height: 450px;
+    padding:10px 0 10px 0;
+    margin-top: 10px;
+    background-color: #fefefe;
+}
+.nav .item:hover{
+    background-color: #636363;
+
+}
+.item a:hover{
+    background-color: red;
+}
+.item a{
+    font-size: 14px;
+}
+.nav .item{
+    width: 172px;
+    height: 25px;
+    padding-left: 18px;
+}
+.item spam{
+    padding:0 2px 0 2px;
+}
+.item a{
+    text-decoration: none;
+}

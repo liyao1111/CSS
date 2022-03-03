@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <style>
+        li{
+            list-style-type: none;
+        }
+        .par2 li::before{
+            content:'\f1b0';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            font-size: 30px;
+            
+            color: blue;
+            font-size:15px;
+        }
+             
+
+            
+        
+    </style>
+</head>
+<body>
+    <ul class="par1">
+        <li>
+            <i class="fas fa-paw"></i>
+            锄禾日当午
+        </li>
+        <li>
+            <i class="fas fa-paw"></i>
+            汗滴禾下土
+        </li>
+        <li>
+            <i class="fas fa-paw"></i>
+            谁之盘中餐
+        </li>
+        <li>
+            <i class="fas fa-paw"></i>
+            粒粒皆辛苦
+        </li>
+    </ul>
+    <br>
+    <!-- 另一种写法 -->
+    <ul class="par2">
+        <li>锄禾日当午</li>
+        <li>汗滴禾下土</li>
+        <li>谁之盘中餐</li>
+        <li>粒粒皆辛苦</li>
+    </ul>
+    <!-- 通过实体来使用图标文字
+            &#x图标的编码
+     -->
+     <i class="fas">&#xf0f3</i>
+    
+</body>
+</html>

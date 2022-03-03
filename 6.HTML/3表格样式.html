@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 50%;
+            border: 1px red solid;
+            margin: 0 auto;
+
+            /* border-spacing 边框之间的距离
+              border-spacing: 10px;
+             */
+
+             /* border-collapse: collapse
+                设置边框的合并 多重边框合并为一个边框
+             */
+             border-collapse: collapse;
+           
+        }
+        td{
+            border: 1px blue solid;
+            height: 50px;
+            /*默认情况下元素在td中垂直居中
+            可通过 vertical-align来改变 */
+            vertical-align: top;
+            text-align: center
+        }
+        tr:nth-child(odd){
+            background-color: #bfa;
+        }
+        /* 如果表格中没有tbody而是直接使用tr
+                那么浏览器会自动创建一个tbody并将所有tr都放入tbody中
+                tr不是tbody的子元素
+         */
+         tbody > tr:nth-child(even){
+             background-color: red;
+         }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>学号</td>
+            <td>姓名</td>
+            <td>性别</td>
+            <td>年龄</td>
+        </tr>
+        <tr><td>1</td>
+            <td>li</td>
+            <td>男</td>
+            <td>11</td>
+        </tr>
+        <tr><td>2</td>
+            <td>qa</td>
+            <td>男</td>
+            <td>12</td>
+        </tr>
+        <tr><td>3</td>
+            <td>lo</td>
+            <td>男</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>学号</td>
+            <td>姓名</td>
+            <td>性别</td>
+            <td>年龄</td>
+        </tr>
+        <tr><td>1</td>
+            <td>li</td>
+            <td>男</td>
+            <td>11</td>
+        </tr>
+        <tr><td>2</td>
+            <td>qa</td>
+            <td>男</td>
+            <td>12</td>
+        </tr>
+        <tr><td>3</td>
+            <td>lo</td>
+            <td>男</td>
+            <td>16</td>
+        </tr>
+         
+    </table>
+    
+</body>
+</html>

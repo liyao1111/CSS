@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻列表</title>
+    <link rel="stylesheet" href="../9reset.css">
+    <style>
+      
+        .newswapper{
+            width: 300px;
+            height: 358px;
+            background-color: white;
+            margin-top: 100px;
+            margin-left: 300px;
+            border-top: 1px #ddd solid;
+        }
+        .newstitle{  
+            width: 300px;
+            height: 41px;
+            display: inline-block;
+            padding:6px 0 10px;
+            border-top: 1px red solid;
+            margin:-1px 0 0;
+           
+        }
+        .newstitle a{
+            text-decoration: none;
+            color: #404040;
+
+        }
+        img{
+            width: 300px;
+            height: 150px;
+        }
+        .imgtitle{
+            margin-top: -25px;
+            color: #fff;
+            font-weight: bold;
+            padding:0 0  0 30px;
+        }
+        .newslist {
+            margin-top: 10px;
+            padding-left: 15px;
+        }
+        .newslist li{
+            width: 300px;
+            height: 30px;
+            
+        }
+        .newslist a{
+            text-decoration: none;
+        }
+        .newslist a:hover{
+            color: red;
+        }
+        
+        .newslist li a{
+            font-size: 14px;
+            color: #666;
+            font-family: arial,宋体;
+            width: 230.4px;
+            height: 13.6px;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 新闻容器 -->
+    <div class="newswapper">
+        <h2 class="newstitle">
+            <a href="#"><span>体育</span></a>
+        </h2>
+        <!-- 图片列表容器 -->
+        <a href="#">
+            <div class="newsimg">
+                <img src="./newsimg/欧文.webp" alt="欧文">
+                <h3 class="imgtitle"> 欧文因喷骑士球迷被罚25000美元</h3>   
+            </div>
+        </a>
+        <!-- 新闻列表 -->
+        <ul class="newslist">
+            <li><a href="#">湖人被操控，幕后黑手是老板闺蜜？</a>
+            </li>
+            <li>
+                <a href="#">科比的西装，娜娜的成长</a>
+            </li>
+            <li>
+                <a href="#">火箭弃帅骚操作，死亡三高胜率60%，乐福第</a>
+            </li>
+            <li>
+                <a href="#">别逗了，你真以为冰球场上能合法打架？</a>
+            </li>
+        </ul>
+        
+
+    </div>
+    
+</body>
+</html>

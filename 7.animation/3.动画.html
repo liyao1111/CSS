@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            height: 600px;
+            width: 100%;
+            border-bottom: 10px black solid;
+            overflow: hidden;
+        }
+        .box2{
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+            border-radius: 50%;
+            animation-name: run;
+            animation-duration: 5s;
+            animation-timing-function: ease-in;
+            /* animation-iteration-count: infinite; */
+            animation-direction: alternate;
+        }
+        .box1 div{
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            border-radius: 50%;
+            animation-name: run2;
+            animation-duration: 2s;
+            animation-iteration-count:infinite ;
+            animation-direction: alternate;
+        }
+        .box3{
+            background-color: red;
+            animation-delay: .1s;
+        }
+        .box4{
+            background-color: green;
+            animation-delay: .2s;
+        }
+        .box5{
+            background-color: aqua;
+            animation-delay: .3s;
+        }
+        .box6{
+            background-color: fuchsia;
+            animation-delay: .4s;
+        }
+        @keyframes run {
+            from{
+                margin-top: 0;
+            }
+            25%{
+                margin-top: 500px;
+            }
+            50%{
+                margin-top: 200px;
+            }
+            75%{
+                margin-top:500px;
+            }
+            90%{
+                margin-top:400px;
+            }
+            to{
+                margin-top:500px ;
+            }
+            
+        }
+        @keyframes run2 {
+            from{
+                margin-top: 0;
+            }
+            to{
+                margin-top: 500px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+    </div>
+    
+</body>
+</html>

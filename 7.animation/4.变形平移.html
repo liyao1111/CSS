@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+            margin: 0px auto;
+            margin-top: 200px;
+            line-height: 100px;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            margin:0 auto;
+            line-height: 100px;
+            background-color: orange;
+            transform: translateX(50px)
+                        translateY(-50px);
+            
+            
+
+        }
+        /* 变形治通过css改变元素的形状和位置
+            不会改变页面的布局
+         */
+         /* transform设置元素的变形效果 
+            平移
+                translateX（） X方向平移
+                translateY（）y方向平移
+                translateZ() z方向平移
+                    百分比是相对于自身计算的
+        */
+        .box3{
+            background-color:red;
+            position: absolute;
+            /* 让其居中 */
+            /* top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            这种方法只适用元素宽度高度已定
+             */
+             left: 50%;
+             top: 50%;
+             transform: translateX(-50%)
+                        translateY(-50%);
+        }
+        /* 卡片浮出效果 */
+        .box4{
+            width: 220px;
+            height: 300px;
+            background-color: #bfa;
+            
+            transition: .5s;
+        }
+        .box4:hover{
+            transform: translateY(-50%);
+            box-shadow:0 0 10px rgba(0, 0, 0, .5);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3">aaa</div>
+    <div class="box4"></div>
+</body>
+</html>

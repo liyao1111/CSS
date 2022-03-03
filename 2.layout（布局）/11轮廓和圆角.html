@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            
+            /* outline 设置元素的轮廓线
+                用法和border一样
+                和border不同的是轮廓不会影响到可见框的大小
+             */
+             /* outline: 10px red solid; */
+             }
+        .box1:hover{
+            outline: 10px red solid;
+            }
+        /* box-shadow 阴影  设置元素的阴影效果，阴影不会影响页面布局
+            box-shadow
+                第一个值 水平偏移量 设置阴影的水平位置 正值向右移动，负值向左移动
+                第二个值 垂直偏移量  设置阴影的垂直位置 正值线下移动，负值向上移动
+                第三个值 阴影的模糊半径
+                第四个值 阴影的颜色
+                
+         */
+         .box1{
+             box-shadow: 10px 10px 30px seagreen;
+         }
+         /* border-radius
+            border-top-right-radius
+            border-top-left-radius
+            border-bottom-right-radius
+            border-bottom-left-radius */
+            .box2{
+                width: 200px;
+                height: 200px;
+                background-color: slateblue;
+                box-shadow: 20px 30px 40px slategray;
+                /* 
+                    border-radius _ _ _  _
+                        左上 右上 右下 左下
+                 */
+                border-radius: 10px 20px  30px 40px;
+            }
+            /* 将元素设置为一个圆 */
+            .box3{
+                width: 200px;
+                height: 200px;
+                background-color: gray;
+                box-shadow: 20px 0 20px slategray;
+                border-radius: 50%;
+            }
+            .box3:hover{
+                outline: 3px blue  solid ;
+            }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <span>hello</span>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    
+</body>
+</html>

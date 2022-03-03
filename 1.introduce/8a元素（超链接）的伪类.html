@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 伪类是用来表示一些特殊的状态 */
+        /* a:link 表示未访问过的链接 */
+        a:link{
+            color:palegreen;
+            font-size: 50px;
+        }
+        /* a:visited 表示访问过的链接
+            由于隐私原因，visited只能修改链接的颜色，大小不能修改*/
+        a:visited{
+            color:orchid;
+            font-size: 30px;
+        }
+        /* :hover 表示鼠标移入的状态 */
+        a:hover{
+            font-size: 75px;
+            color: blue;
+        }
+        /* :active 表示鼠标点击的状态*/
+        a:active{
+            color: red;
+            font-size: 90px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        链接分两种状态
+            1 未访问过的状态
+            2 访问过的状态
+
+     -->
+    <a href="https://www.baidu.com/" target="_blank">访问过的百度</a>
+    <br>
+    <br>
+    <a href="https://www.baidu.com/" target="_blank">未访问过的百度</a>
+    <br>
+    <a href="https://www.baidu215125t.com/" target="_blank">biadu </a>
+
+    
+    
+</body>
+</html>

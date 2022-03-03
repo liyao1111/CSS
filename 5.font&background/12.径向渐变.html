@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-image: radial-gradient(red,yellow);
+            /*径向渐变 放射性的效果
+            默认情况径向渐变的形状根据元素的形状来计算
+                正方形--圆形
+                长方形--椭圆
+            可以手动指定径向渐变的大小
+                circle
+                ellipsse
+            可以指定渐变的位置
+                at * *
+             */
+        }
+        .box2{
+            width: 300px;
+            height: 300px;
+            background-image: radial-gradient(100px 100px  at 0 0, red ,blue);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    
+</body>
+</html>

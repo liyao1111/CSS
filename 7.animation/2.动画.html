@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 600px;
+            height: 600px;
+            overflow: hidden;
+            background-color: silver;
+        }
+        .box1 div{
+            width: 100px;
+            height: 100px;
+        }
+        .box2{
+            margin-left: 20px;
+            background-color: #bfa;
+            animation-name: test; /* 执行哪个动画操作 */
+            animation-duration: 2s;/* 动画执行时间 */
+            animation-timing-function: ease-in-out;
+            animation-iteration-count:3 ; 
+            /* 动画执行次数
+                可选值 
+                        次数
+                        infinite无限执行
+             */ 
+             animation-direction:alternate ;
+             /*animation-direction指定动画运动的方向
+                normal 默认值 从from到to
+                reverse 从to到from
+                alternate 从from到to 重复执行动画时反向执行
+              */
+              animation-play-state: running;
+              /* animation-play-state: ;
+                    设置动画播放状态
+                    可选值: 
+                        running 默认 动画执行
+                        pause 动画暂停
+             */
+             animation-delay: 2s;
+             animation-fill-mode: forwards;
+             /* animation-fill-mode: ;
+                动画的填充方式 
+                    可选值
+                        none 默认值 动画执行完毕回到原来位置
+                        forwards 动画执行完毕直到元素会停止在动画结束位置
+                        backwards 动画延时等待时 元素就会处于开始位置
+                        both 结合forwards和backwards两个特点
+                        */
+          
+        }
+        /* 动画
+            自动触发动态效果
+            
+        设置动画效果,必须设置一个关键帧
+            关键帧设置了动画执行的每一个步骤
+        */
+        @keyframes test {
+             /* 动画开始位置 from也可用100%表示*/
+             from{
+                margin-left: 0;
+            }
+              /* 动画结束位置 to也可以用0%表示 */
+            to{
+                margin-left: 500px;
+            }  
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+    
+</body>
+</html>

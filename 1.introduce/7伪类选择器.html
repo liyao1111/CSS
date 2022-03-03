@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 将ul里的第一个li设置为红色 */
+        /* 伪类（不存在的类）
+            -伪类用来描述一个元素的特殊状态
+                比如：第一个子元素、被点击的元素、鼠标移入的元素
+                伪类一般情况下使用：开头
+                    ；first-child 第一个子元素
+                    ；last-child 最后一个子元素
+                    :nth-child(n) 第n个子元素 
+                        特殊值：
+                                n 范围0~正无穷
+                                2n even 表示选中偶数位的元素
+                                2n+1 odd 奇数位元素
+                以上这些伪类都是根据所有的子元素进行排序
+
+                :first-of-type
+                :last-of-type
+                :nth-of-type()
+                    -这几个伪类功能和上述类似，不同点是他们是在同类型元素中进行排序
+
+                :not()否定伪类
+                    -从满足条件的去除出去
+                    
+                */
+                ol>li{
+                    font-size: 60px;
+                }
+                
+                ul > li:first-child{
+                    color: red;
+                }
+                ul > li:last-child{
+                    color: purple;
+                }
+                ul >li:nth-child(3){
+                    color: seagreen;
+                }
+                ol>li:nth-child(2n){
+                    color: sienna;
+                }
+                ol>li:nth-child(2n+1){
+                    color: turquoise;
+                }
+                ol>li:nth-child(odd){
+                    text-align: center;
+                }
+                ul>li:nth-of-type(3){
+                    color: chocolate;
+                }
+                ul>li:nth-of-type(3){
+                    font-size: 40px;
+                }
+                ul>li:not(:nth-of-type(3)){
+                    text-align: center;
+                }
+                
+
+
+    </style>
+</head>
+<body>
+    <ul class="ul1">
+        <li>第一个 </li>
+        <li>第二个</li>
+        <li>第三个</li>
+        <li>第四个</li>
+        <li>第五个</li>
+    <ol>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+        <li>F</li>
+    </ol>
+    <ul id="2ul">
+        <span>这是一个span</span>
+        <li>二一</li>
+        <li>二二</li>
+        <li>二三</li>
+        <li>二四</li>
+    </ul>
+
+    
+
+
+    
+    
+</body>
+</html>
